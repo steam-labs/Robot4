@@ -1,18 +1,18 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="10" x="198" y="69">
+  <block type="movement_forward" id="1" x="198" y="69">
     <next>
-      <block type="robot_delay" id="22" inline="true">
+      <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="29">
+          <block type="math_number" id="3">
             <field name="NUM">2000</field>
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="39">
+          <block type="movement_stop" id="4">
             <next>
-              <block type="oled_drawnumber" id="82" inline="true">
+              <block type="oled_drawnumber" id="5" inline="true">
                 <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="46">
+                  <block type="sensor_spectrometer" id="6">
                     <field name="LIGHT">RED</field>
                   </block>
                 </value>
