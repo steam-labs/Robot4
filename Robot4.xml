@@ -1,13 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="390" inline="true" x="-40" y="183">
-    <value name="TIMES">
-      <block type="math_number" id="397">
-        <field name="NUM">100000</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="443"></block>
-    </statement>
+  <block type="movement_forward" id="458" x="-36" y="252">
     <next>
       <block type="controls_if" id="309" inline="false">
         <mutation else="1"></mutation>
