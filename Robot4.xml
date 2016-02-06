@@ -1,33 +1,32 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="327" x="-63" y="104">
+  <block type="controls_repeat" id="390" inline="true" x="-58" y="167">
+    <value name="TIMES">
+      <block type="math_number" id="397">
+        <field name="NUM">10000</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="movement_forward" id="408"></block>
+    </statement>
     <next>
-      <block type="controls_repeat" id="390" inline="true">
-        <value name="TIMES">
-          <block type="math_number" id="397">
-            <field name="NUM">10000</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="controls_if" id="309" inline="false">
-            <value name="IF0">
-              <block type="logic_compare" id="277" inline="true">
-                <field name="OP">GT</field>
-                <value name="A">
-                  <block type="sensor_spectrometer" id="159">
-                    <field name="LIGHT">RED</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="284">
-                    <field name="NUM">85</field>
-                  </block>
-                </value>
+      <block type="controls_if" id="309" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="277" inline="true">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="159">
+                <field name="LIGHT">RED</field>
               </block>
             </value>
-            <statement name="DO0">
-              <block type="movement_stop" id="338"></block>
-            </statement>
+            <value name="B">
+              <block type="math_number" id="284">
+                <field name="NUM">85</field>
+              </block>
+            </value>
           </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_stop" id="338"></block>
         </statement>
       </block>
     </next>
