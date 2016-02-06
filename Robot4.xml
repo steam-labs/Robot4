@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="295" x="-69" y="193">
+  <block type="movement_forward" id="295" x="-28" y="176">
     <next>
       <block type="controls_whileUntil" id="89" inline="false">
         <field name="MODE">UNTIL</field>
