@@ -6,28 +6,28 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="4" inline="false">
+      <block type="controls_if" id="3" inline="false">
         <mutation else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="5" inline="true">
+          <block type="logic_compare" id="4" inline="true">
             <field name="OP">GT</field>
             <value name="A">
-              <block type="sensor_spectrometer" id="6">
+              <block type="sensor_spectrometer" id="5">
                 <field name="LIGHT">BLUE</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="7">
-                <field name="NUM">45</field>
+              <block type="math_number" id="6">
+                <field name="NUM">55</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_forward" id="9"></block>
+          <block type="movement_reverse" id="7"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_reverse" id="19"></block>
+          <block type="movement_forward" id="8"></block>
         </statement>
       </block>
     </statement>
