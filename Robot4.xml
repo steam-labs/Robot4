@@ -8,7 +8,17 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="39"></block>
+          <block type="movement_stop" id="39">
+            <next>
+              <block type="oled_drawnumber" id="82" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_spectrometer" id="46">
+                    <field name="LIGHT">RED</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
