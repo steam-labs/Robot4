@@ -6,33 +6,34 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="19"></block>
-    </statement>
-    <next>
-      <block type="controls_if" id="3" inline="false">
-        <mutation else="1"></mutation>
-        <value name="IF0">
-          <block type="logic_compare" id="4" inline="true">
-            <field name="OP">GT</field>
-            <value name="A">
-              <block type="sensor_spectrometer" id="5">
-                <field name="LIGHT">RED</field>
+      <block type="movement_forward" id="19">
+        <next>
+          <block type="controls_if" id="3" inline="false">
+            <mutation else="1"></mutation>
+            <value name="IF0">
+              <block type="logic_compare" id="4" inline="true">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="sensor_spectrometer" id="5">
+                    <field name="LIGHT">RED</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="6">
+                    <field name="NUM">75</field>
+                  </block>
+                </value>
               </block>
             </value>
-            <value name="B">
-              <block type="math_number" id="6">
-                <field name="NUM">75</field>
-              </block>
-            </value>
+            <statement name="DO0">
+              <block type="movement_stop" id="7"></block>
+            </statement>
+            <statement name="ELSE">
+              <block type="movement_forward" id="8"></block>
+            </statement>
           </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_stop" id="7"></block>
-        </statement>
-        <statement name="ELSE">
-          <block type="movement_forward" id="8"></block>
-        </statement>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
