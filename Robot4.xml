@@ -1,16 +1,36 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="108" x="28" y="101">
+  <block type="variables_set" id="206" inline="true" x="21" y="21">
+    <field name="VAR">Red</field>
+    <value name="VALUE">
+      <block type="sensor_spectrometer" id="159">
+        <field name="LIGHT">RED</field>
+      </block>
+    </value>
     <next>
-      <block type="controls_whileUntil" id="89" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_spectrometer" id="159">
-            <field name="LIGHT">RED</field>
+      <block type="movement_forward" id="108">
+        <next>
+          <block type="controls_whileUntil" id="89" inline="false">
+            <field name="MODE">WHILE</field>
+            <value name="NUMBER">
+              <block type="logic_compare" id="277" inline="true">
+                <field name="OP">GT</field>
+                <value name="A">
+                  <block type="variables_get" id="234">
+                    <field name="VAR">Red</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="284">
+                    <field name="NUM">80</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_stop" id="169"></block>
+            </statement>
           </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_stop" id="169"></block>
-        </statement>
+        </next>
       </block>
     </next>
   </block>
