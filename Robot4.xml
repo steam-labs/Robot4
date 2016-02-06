@@ -16,8 +16,6 @@
         </value>
       </block>
     </value>
-    <statement name="DO">
-      <block type="movement_forward" id="295"></block>
-    </statement>
   </block>
+  <block type="movement_forward" id="295" x="32" y="395"></block>
 </xml>
