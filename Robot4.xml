@@ -1,11 +1,14 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="1" inline="true" x="-57" y="84">
+  <block type="controls_repeat" id="1" inline="true" x="-64" y="25">
     <value name="TIMES">
       <block type="math_number" id="2">
         <field name="NUM">100000</field>
       </block>
     </value>
     <statement name="DO">
+      <block type="movement_forward" id="19"></block>
+    </statement>
+    <next>
       <block type="controls_if" id="3" inline="false">
         <mutation else="1"></mutation>
         <value name="IF0">
@@ -30,6 +33,6 @@
           <block type="movement_forward" id="8"></block>
         </statement>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
