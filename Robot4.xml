@@ -1,30 +1,26 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="458" x="-36" y="252">
-    <next>
-      <block type="controls_if" id="309" inline="false">
-        <mutation else="1"></mutation>
-        <value name="IF0">
-          <block type="logic_compare" id="277" inline="true">
-            <field name="OP">GT</field>
-            <value name="A">
-              <block type="sensor_spectrometer" id="159">
-                <field name="LIGHT">RED</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="284">
-                <field name="NUM">85</field>
-              </block>
-            </value>
+  <block type="controls_if" id="309" inline="false" x="-32" y="263">
+    <mutation else="1"></mutation>
+    <value name="IF0">
+      <block type="logic_compare" id="277" inline="true">
+        <field name="OP">GT</field>
+        <value name="A">
+          <block type="sensor_spectrometer" id="159">
+            <field name="LIGHT">RED</field>
           </block>
         </value>
-        <statement name="DO0">
-          <block type="movement_stop" id="338"></block>
-        </statement>
-        <statement name="ELSE">
-          <block type="movement_forward" id="432"></block>
-        </statement>
+        <value name="B">
+          <block type="math_number" id="284">
+            <field name="NUM">85</field>
+          </block>
+        </value>
       </block>
-    </next>
+    </value>
+    <statement name="DO0">
+      <block type="movement_stop" id="338"></block>
+    </statement>
+    <statement name="ELSE">
+      <block type="movement_forward" id="432"></block>
+    </statement>
   </block>
 </xml>
