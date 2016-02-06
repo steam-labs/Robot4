@@ -20,5 +20,4 @@
       <block type="movement_forward" id="295"></block>
     </statement>
   </block>
-  <block type="movement_stop" id="169" x="15" y="409"></block>
 </xml>
