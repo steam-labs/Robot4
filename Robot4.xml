@@ -24,10 +24,10 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_reverse" id="19"></block>
+          <block type="movement_forward" id="9"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="9"></block>
+          <block type="movement_reverse" id="19"></block>
         </statement>
       </block>
     </statement>
